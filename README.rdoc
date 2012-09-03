@@ -6,14 +6,14 @@ This is a coding exercise that takes in talks with durations and schedules out a
 
 You are planning a big programming conference and have received many proposals which have passed the initial screen process but you're having trouble fitting them into the time constraints of the day -- there are so many possibilities! So you write a program to do it for you.
 
-  The conference has multiple tracks each of which has a morning and afternoon session.
-  Each session contains multiple talks.
-  Morning sessions begin at 9am and must finish by 12 noon, for lunch. 
-  Afternoon sessions begin at 1pm and must finish in time for the networking event.
-  The networking event can start no earlier than 4:00 and no later than 5:00.
-  No talk title has numbers in it.
-  All talk lengths are either in minutes (not hours) or lightning (5 minutes).
-  Presenters will be very punctual; there needs to be no gap between sessions.
+*  The conference has multiple tracks each of which has a morning and afternoon session.
+*  Each session contains multiple talks.
+*  Morning sessions begin at 9am and must finish by 12 noon, for lunch. 
+*  Afternoon sessions begin at 1pm and must finish in time for the networking event.
+*  The networking event can start no earlier than 4:00 and no later than 5:00.
+*  No talk title has numbers in it.
+*  All talk lengths are either in minutes (not hours) or lightning (5 minutes).
+*  Presenters will be very punctual; there needs to be no gap between sessions.
 
 Note that depending on how you choose to complete this problem, your solution may give a different ordering or combination of talks into tracks. This is acceptable; you don’t need to exactly duplicate the sample output given here.
  
@@ -130,8 +130,8 @@ To try planning your own conference using this exercise, run the executable.
   04:15PM Networking Event
   $
 
-Rules, if successfully implemented will return 'OK', otherwise the text "I have no idea what you are talking about" will be returned.
+Input each talk by line, with the format of [talk title] [duration] where "lightning" is a 5 minute talk.
 
-Questions, if answerable will return the answer, otherwise the text "I have no idea what you are talking about" will be returned.
+When finished adding talks, enter "done"
 
-To exit the program, type in 'exit' to the prompt.
+The program will then output a formatted conference with each talk scheduled correctly inside of a session inside a track. Tracks can be used either as additional days to the conference or for having concurrently scheduled talks on the same day.
