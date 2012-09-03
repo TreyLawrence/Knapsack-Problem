@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+require './lib/conference_track_manager'
+require './lib/conference_track_manager/talk'
+
+planner = ConferenceTrackManager.new
+input = ""
+print "> "
+
+while (line = gets) != "done\n"
+  input << line
+  print "> "
+end
+
+planner.add_talks(input)
+puts planner
